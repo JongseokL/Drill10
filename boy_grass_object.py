@@ -55,6 +55,8 @@ class smallBall:
 
     def update(self):
         self.y -= random.randint(5, 15)
+        if (self.y < 65):
+           self.y = 65
 
     def draw(self):
         self.image.draw(self.x, self.y)
@@ -67,6 +69,8 @@ class bigBall:
 
     def update(self):
         self.y -= random.randint(5, 15)
+        if (self.y < 75):
+           self.y = 75
 
     def draw(self):
         self.image.draw(self.x, self.y)
@@ -130,7 +134,7 @@ while running:
     handle_events()
     update_world()
     render_world()
-    delay(0.1)
+    delay(0.05)
 
 
 close_canvas()
