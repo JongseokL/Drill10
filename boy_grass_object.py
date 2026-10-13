@@ -104,6 +104,11 @@ def reset_world():
     team = [Boy() for i in range(11)] # 11명의 소년 객체를 생성하여 team 리스트에 넣는다.
     world += team # world 리스트에 team 리스트를 합친다.
 
+    smallball = [smallBall() for i in range(10)]
+    world += smallball
+    bigball = [bigBall() for i in range(10)]
+    world += bigball
+
 def update_world():
     for o in world:
         o.update()
