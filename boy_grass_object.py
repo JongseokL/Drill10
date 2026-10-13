@@ -54,6 +54,9 @@ class smallBall:
         self.image = load_image('ball21x2l.png')
 
     def update(self):
+        self.y -= random.randint(5, 10)
+
+    def draw(self):
         pass
 
 class bigBall:
@@ -63,7 +66,7 @@ class bigBall:
         self.image = load_image('ball41x41.png')
 
     def update(self):
-        pass
+        self.y -= random.randint(5, 10)
 
     def draw(self):
         pass
